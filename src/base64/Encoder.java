@@ -1,9 +1,7 @@
 package base64;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.IOException;
 import org.apache.commons.codec.binary.Base64;
 
@@ -20,7 +18,7 @@ public class Encoder {
 	
 	private void run( ) {
 		try {
-			FileInputStream fis = new FileInputStream( "resources/lena.png" );
+			FileInputStream fis = new FileInputStream( "resources/boletim.pdf" );
 			BufferedInputStream bis = new BufferedInputStream( fis );
 			byte[ ] data = new byte[ bis.available( ) ];
 			bis.read( data );
